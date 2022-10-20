@@ -1,0 +1,34 @@
+<?xml version = "1.0"?>
+<theme>
+  <name>Night Ocean</name>
+  <root>
+    <R>85</R>
+    <G>165</G>
+    <B>255</B>
+  </root>
+  <node>
+    <R>73</R>
+    <G>240</G>
+    <B>178</B>
+  </node>
+  <curve>
+    <R>80</R>
+    <G>220</G>
+    <B>178</B>
+  </curve>
+  <text>
+    <R>26</R>
+    <G>26</G>
+    <B>26</B>
+  </text>
+  <ground>
+    <R>56</R>
+    <G>56</G>
+    <B>56</B>
+  </ground>
+  <bulb>
+    <R>242</R>
+    <G>54</G>
+    <B>54</B>
+  </bulb>
+</theme>

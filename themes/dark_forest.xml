@@ -1,0 +1,34 @@
+<?xml version = "1.0"?>
+<theme>
+  <name>Dark Forest</name>
+  <root>
+    <R>85</R>
+    <G>220</G>
+    <B>0</B>
+  </root>
+  <node>
+    <R>153</R>
+    <G>255</G>
+    <B>65</B>
+  </node>
+  <curve>
+    <R>85</R>
+    <G>212</G>
+    <B>0</B>
+  </curve>
+  <text>
+    <R>26</R>
+    <G>26</G>
+    <B>26</B>
+  </text>
+  <ground>
+    <R>56</R>
+    <G>56</G>
+    <B>56</B>
+  </ground>
+  <bulb>
+    <R>255</R>
+    <G>42</G>
+    <B>42</B>
+  </bulb>
+</theme>

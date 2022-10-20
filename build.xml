@@ -1,0 +1,31 @@
+<project name="Nodefy" default="build" basedir=".">
+	<target name="compile">
+		<mkdir dir="generated"/>
+		<javac srcdir="src" destdir="generated">
+			<classpath>
+				<pathelement location="generated"/>
+      		<pathelement path="${java.class.path}"/>
+      		<pathelement location="libs/radcode.jar"/>
+      		<pathelement path="warrpy.radcode.Radcode"/>
+      		<pathelement location="libs/org.jfree.svg-5.0.3.jar"/>
+      		<pathelement path="org.jfree.svg.SVGGraphics2D"/>
+      		<pathelement path="org.jfree.svg.SVGUtils"/>
+      	</classpath>
+      </javac>
+   </target>
+   <target name="build" depends="compile">
+   	<mkdir dir="build/app"/>
+   		<jar destfile="build/app/Nodefy.jar">
+   				<manifest>
+						<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+               	<attribute name="Rsrc-Main-Class" value="warrpy.nodefy.Nodefy"/>
+               	<attribute name="Class-Path" value="."/>
+               	<attribute name="Rsrc-Class-Path" value="./ radcode.jar org.jfree.svg-5.0.3.jar"/>
+            	</manifest>
+         	<zipfileset src="libs/jar-in-jar-loader.zip"/>
+         	<zipfileset dir="libs" includes="radcode.jar"/>
+         	<zipfileset dir="libs" includes="org.jfree.svg-5.0.3.jar"/>
+         	<fileset dir="generated"/>
+      	</jar>
+   </target>
+</project>
