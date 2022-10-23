@@ -1,5 +1,3 @@
-#Nodefy
-
 A simple application for creating mind maps
 ---
 ![](https://github.com/warrpy/Nodefy/blob/main/screenshots/Nodefy.png?raw=true)
